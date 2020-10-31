@@ -162,3 +162,35 @@ margin-inline-end: calc(var(--common_value) * 2);
     padding-block-start: var(--common_value);
     text-align: center;
 }
+
+@media (min-width: 600px) {
+    body {
+        max-width: 1114px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+
+    .label_menu {
+        display: none;
+    }
+
+    .masthead__navigation_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-inline-start: 70vw;
+    }
+
+    .masthead__list_item {
+        margin-inline-start: 86px;
+    }
+
+    .interior__description {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        column-gap: 32px;
+    }
+
+
+}
