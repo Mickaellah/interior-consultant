@@ -1,0 +1,20 @@
+{
+  "name": "interior-consultant",
+  "version": "1.0.0",
+  "description": "Challenge: Create a homepage following the design. The page should be responsive. Don’t look at the existing solution. Fulfill user stories below:",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass scss/index.scss -o webroot/css",
+    "css:watch": "npm run css && node-sass scss -w -o webroot/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mickaellah/interior-consultant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mickaellah/interior-consultant/issues"
+  },
+  "homepage": "https://github.com/Mickaellah/interior-consultant#readme"
+}
