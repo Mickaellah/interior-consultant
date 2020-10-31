@@ -1,9 +1,23 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/woff/Poppins-Regular.woff') format('woff'),
+        url('../fonts/woff/Poppins-Regular.woff2') format('woff2');
+    font-weight: 300;
+}
+
+:root {
+    --common_value: 16px;
+    --margin_top: 25px;
+    --base_font_size: 14px;
+}
+
 body {
+    font-family: "Montserrat";
     margin: 0;
-    padding: 16px;
+    padding: var(--common_value);
     background-color: #181719;
-    color: white;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: var(--base_font_size);
     position: relative;
 }
 
@@ -20,17 +34,17 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-block-start: 16px;
+    margin-block-start: var(--common_value);
 }
 
 .masthead__header {
     margin: 0;
     margin-block-start: -8px;
     border: 1px solid white;
-    padding: 8px;
+    padding: calc(var(--common_value) / 2);
     padding-block-end: 7;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: var(--base_font_size);
 }
 
 .label_menu {
@@ -40,7 +54,7 @@ a {
   
 .label_menu::before {
 content: url('../icon/menu.svg');
-margin-inline-end: 32px;
+margin-inline-end: calc(var(--common_value) * 2);
 
 }
 
@@ -59,7 +73,7 @@ margin-inline-end: 32px;
 
 [type="checkbox"]:checked ~ .masthead__navigation {
     position: absolute;
-    top: 8px;
+    top: calc(var(--common_value) / 2);
     bottom: 0;
     left: 0;
     width: 350px;
@@ -75,7 +89,7 @@ margin-inline-end: 32px;
 
 .masthead__list_item {
     list-style: none;
-    margin-block-start: 16px;
+    margin-block-start: var(--common_value);
     text-align: center;
 }
 
@@ -92,17 +106,21 @@ margin-inline-end: 32px;
 }
 
 .interior__content {
-    margin-block-start: 25px;
+    margin-block-start: var(--margin_top);
     text-align: left;
 }
 
 .interior__more_information {
     margin: 0;
-    margin-block-start: 25px;
+    margin-block-start: var(--margin_top);
+}
+
+.interior__read_more--link {
+    font-weight: 600;
 }
 
 .interior__image_container {
-    margin-block-start: 32px;
+    margin-block-start: calc(var(--common_value) * 2);
 }
 
 .interior__image {
@@ -110,7 +128,7 @@ margin-inline-end: 32px;
 }
 
 .information {
-    padding: 16px;
+    padding: var(--common_value);
     background-color: #181719;
     box-shadow: 2px 2px 10px #000000;
     width: 250px;
@@ -141,6 +159,6 @@ margin-inline-end: 32px;
 .footer__copyright {
     border-top: 1px solid #A9A9A9;
     color: #A9A9A9;
-    padding-block-start: 16px;
+    padding-block-start: var(--common_value);
     text-align: center;
 }
