@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 16px;
+    background-color: #181719;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block-start: 16px;
+}
+
+.masthead__header {
+    margin: 0;
+    margin-block-start: -8px;
+    border: 1px solid white;
+    padding: 8px;
+    padding-block-end: 7;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.label_menu {
+    color: transparent;
+    margin-inline-end: -64px;
+}
+  
+.label_menu::before {
+content: url('../icon/menu.svg');
+margin-inline-end: 32px;
+
+}
+
+.masthead__navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -400px;
+    width: 380px;
+    z-index: 1;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type="checkbox"]:checked ~ .masthead__navigation {
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    z-index: 1;
+    background-color: black;
+    transform: translateX(0);
+}
+
+.masthead__navigation_container {
+    margin: 0;
+    padding: 0;
+}
+
+.masthead__list_item {
+    list-style: none;
+    margin-block-start: 16px;
+    text-align: center;
+}
+
+.masthead__link {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.interior__header {
+    margin: 0;
+    margin-block-start: 38px;
+    font-size: 36px;
+}
+
+.interior__content {
+    margin-block-start: 25px;
+    text-align: left;
+}
+
+.interior__more_information {
+    margin: 0;
+    margin-block-start: 25px;
+}
+
+.interior__image_container {
+    margin-block-start: 32px;
+}
+
+.interior__image {
+    position: relative;
+}
+
+.information {
+    padding: 16px;
+    background-color: #181719;
+    box-shadow: 2px 2px 10px #000000;
+    width: 250px;
+    position: absolute;
+    top: 60%;
+    left: 16%;
+}
+
+.information__profile {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.information__container {
+    margin-inline-start: 62px;
+    margin-block-start: -56px;
+}
+
+.information__date {
+    font-size: 18px;
+}
+
+.footer__copyright {
+    margin-block-start: 70%;
+}
+
+.footer__copyright {
+    border-top: 1px solid #A9A9A9;
+    color: #A9A9A9;
+    padding-block-start: 16px;
+    text-align: center;
+}
