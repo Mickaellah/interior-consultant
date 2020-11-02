@@ -65,6 +65,7 @@ a {
 .label_menu {
     color: transparent;
     margin-inline-end: -64px;
+    cursor: pointer;
 }
   
 .label_menu::before {
@@ -80,6 +81,14 @@ margin-inline-end: calc(var(--common_value) * 2);
     left: -400px;
     width: 380px;
     z-index: 1;
+}
+
+.masthead__navigation--exit {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    margin-block-start: 8px;
 }
 
 [type="checkbox"] {
@@ -98,7 +107,7 @@ margin-inline-end: calc(var(--common_value) * 2);
 }
 
 .masthead__navigation--exit {
-    margin-inline-start: 90%;
+    margin-inline-start: 88%;
 }
 
 .masthead__navigation_container {
