@@ -9,6 +9,7 @@
     --common_value: 16px;
     --margin_top: 25px;
     --base_font_size: 14px;
+    --link_font_size: 18px;
 }
 
 body {
@@ -94,15 +95,19 @@ margin-inline-end: calc(var(--common_value) * 2);
 }
 
 .masthead__link {
-    text-transform: uppercase;
     margin: 0;
     padding: 0;
+    font-size: var(--link_font_size);
+}
+
+.masthead__link--home {
+    font-weight: 700;
 }
 
 .interior__header {
     margin: 0;
     margin-block-start: 38px;
-    font-size: 36px;
+    font-size: calc(var(--link_font_size) * 2);
 }
 
 .interior__content {
@@ -149,11 +154,7 @@ margin-inline-end: calc(var(--common_value) * 2);
 }
 
 .information__date {
-    font-size: 18px;
-}
-
-.footer__copyright {
-    margin-block-start: 70%;
+    font-size: var(--link_font_size);
 }
 
 .footer__copyright {
@@ -161,6 +162,7 @@ margin-inline-end: calc(var(--common_value) * 2);
     color: #A9A9A9;
     padding-block-start: var(--common_value);
     text-align: center;
+    margin-block-start: 70%;
 }
 
 @media (min-width: 600px) {
@@ -168,6 +170,10 @@ margin-inline-end: calc(var(--common_value) * 2);
         max-width: 1114px;
         margin-inline-start: auto;
         margin-inline-end: auto;
+    }
+
+    .masthead__header {
+        margin-block-start: 26px;
     }
 
     .label_menu {
@@ -178,18 +184,49 @@ margin-inline-end: calc(var(--common_value) * 2);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-inline-start: 70vw;
+        margin-inline-start: 67vw;
+        margin-block-start: 46px;
     }
 
     .masthead__list_item {
         margin-inline-start: 86px;
     }
 
+    .interior__header {
+        margin-block-start: 171px;
+    }
+
     .interior__description {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 32px;
-        column-gap: 32px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 87px;
+        column-gap: 87px;
+    }
+
+    .interior__content {
+        font-size: 24px;
+        /* font-weight: lighter; */
+    }
+
+    .interior__description--container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .interior__image_container {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        margin-block-start: -40px;
+    }
+
+    .information {
+        top: 43.5%;
+        left: 60%;
+        width: 390px;
+    }
+
+    .footer__copyright {
+        border-top: none;
     }
 
 
